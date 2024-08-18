@@ -12,28 +12,11 @@ From Benjamin VERNOUX ( @bvernoux )
 
 ## Build
 
-This firmware is using STM32CubeIDE, compatible with STM32CubeMX
+This firmware is using `STM32CubeIDE`, compatible with `STM32CubeMX` - project supports code regeneration without altering the ST25TB part.
 
-Hydrabus is using a `STM32F405`, you need its stack from ST: https://www.st.com/en/embedded-software/stm32cubef4.html
+Hydrabus is using a `STM32F405`, you need its stack from ST: https://www.st.com/en/embedded-software/stm32cubef4.html - but the IDE care about it itself.
 
-Decompress it at the root of the workspace in a `ST` directory, subdirectory named `STM32Cube_FW_F4` (without version). The structure must look like this:
-
-```
-├── README.md
-├── ST
-│   └── STM32Cube_FW_F4
-│       ├── Documentation
-│       ├── Drivers
-│       ├── _htmresc
-│       ├── Middlewares
-│       ├── Package_license.html
-│       ├── Package_license.md
-│       ├── package.xml
-│       ├── Projects
-│       ├── Release_Notes.html
-│       └── Utilities
-└── st25tb_kameleon_stm32_hydrabus_hydranfc_v1
-```
+For reference, it was developped with STM32Cube MCU Package for STM32F4 series version 1.28.0 (maybe patch1 ?), if you want to use another version, you may have to edit the `.ioc` file then regenerate the project.
 
 ## Flash
 

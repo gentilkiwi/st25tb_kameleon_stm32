@@ -60,12 +60,12 @@ uint8_t isUSBWanted = 0;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_SPI1_Init(void);
 static void MX_SPI2_Init(void);
 static void MX_TIM6_Init(void);
-static void MX_USB_OTG_HS_PCD_Init(void);
 static void MX_RNG_Init(void);
+static void MX_USB_OTG_HS_PCD_Init(void);
 static void MX_SDIO_SD_Init(void);
-static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -117,11 +117,11 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_SPI1_Init();
   MX_SPI2_Init();
   MX_TIM6_Init();
-  MX_USB_OTG_HS_PCD_Init();
   MX_RNG_Init();
-  MX_SPI1_Init();
+  MX_USB_OTG_HS_PCD_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
   TRF7970A_init();
@@ -298,7 +298,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.Direction = SPI_DIRECTION_2LINES_RXONLY;
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
-  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi1.Init.CLKPhase = SPI_PHASE_2EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
