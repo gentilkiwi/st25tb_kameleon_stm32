@@ -85,12 +85,26 @@ Download verified successfully
 - `port=usb1` is not mandatory, you can also add a `sn=___`
   - use `STM32_Programmer_CLI --list` to be sure before...
 
-## Hardware references
+## References
 
-- `Hydrabus` - https://hydrabus.com/hydrabus-1-0-specifications/
-- `HydraNFC` - https://hydrabus.com/hydranfc-1-0-specifications/
+- `Hydrabus`
+  - https://hydrabus.com/hydrabus-1-0-specifications/
+  - https://github.com/hydrabus/hydrabus
+  - https://github.com/hydrabus/hydrafw
+  
+- `HydraNFC`
+  - https://hydrabus.com/hydranfc-1-0-specifications/
+  - https://github.com/hydrabus/hydranfc
+  - https://github.com/hydrabus/hydrafw (included in original firmware)
+
+- `HydraNFC v2` - _not compatible with this firmware_
+  - https://hydrabus.com/hydranfc-shield-v2-specifications/ 
+  - https://github.com/hydrabus/hydrafw_hydranfc_shield_v2
+
 - `STM32F405RG` - https://www.st.com/en/microcontrollers-microprocessors/stm32f405rg.html
+
 - `TRF7970A` - https://www.ti.com/product/TRF7970A
+
 
 ## Question & Answers
 
@@ -108,7 +122,7 @@ Benjamin DELPY 🥝 `gentilkiwi`, you can contact me on Twitter ( @gentilkiwi ) 
 
 This is a personal development, please respect its philosophy and don't use it for bad things!
 
-Benjamin VERNOUX 
+Benjamin VERNOUX (@bvernoux) is the author of Hydrabus hardware, HydraNFC hardware and their original firmwares
 
 
 ## Licence
