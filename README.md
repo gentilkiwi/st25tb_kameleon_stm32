@@ -84,3 +84,33 @@ Download verified successfully
 - `--erase all` can be added before `--download`
 - `port=usb1` is not mandatory, you can also add a `sn=___`
   - use `STM32_Programmer_CLI --list` to be sure before...
+
+## Hardware references
+
+- `Hydrabus` - https://hydrabus.com/hydrabus-1-0-specifications/
+- `HydraNFC` - https://hydrabus.com/hydranfc-1-0-specifications/
+- `STM32F405RG` - https://www.st.com/en/microcontrollers-microprocessors/stm32f405rg.html
+- `TRF7970A` - https://www.ti.com/product/TRF7970A
+
+## Question & Answers
+
+### 1. Can I buy one?
+
+Yes, maybe, Benjamin VERNOUX ( @bvernoux ) mades them, if you're lucky on https://hydrabus.com/shop/ or maybe you can still find them:
+- Hydrabus : https://www.digikey.fr/en/products/detail/benjamin-vernoux/HYDRABUS-V1/15652912
+- HydraNFC : https://lab401.com/fr/products/hydranfc
+  
+  ... but Benjamin is now more focus on HydraNFC v2 - https://hydrabus.com/hydranfc-shield-v2-specifications/ - with a better NFC chip : `ST25R3916(B)`
+
+## Author
+
+Benjamin DELPY 🥝 `gentilkiwi`, you can contact me on Twitter ( @gentilkiwi ) or by mail ( benjamin [at] gentilkiwi.com )
+
+This is a personal development, please respect its philosophy and don't use it for bad things!
+
+Benjamin VERNOUX 
+
+
+## Licence
+
+CC BY 4.0 licence - [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
