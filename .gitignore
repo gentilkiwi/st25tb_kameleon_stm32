@@ -1,6 +1,8 @@
 /ST/
 Release/
 Debug/
+*/kameleon/private_*
+*/kameleon/*.data
 .mxproject
 .settings/
 .metadata/
